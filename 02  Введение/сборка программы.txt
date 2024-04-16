@@ -1,0 +1,4 @@
+gcc -o hello hello.c
+
+для запуска ./hello или ./hello.exe
+
