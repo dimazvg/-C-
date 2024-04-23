@@ -1,0 +1,13 @@
+Может быть кому-то пригодится для отображения русского языка в окне запуска кода в Visual Studio.
+#include <locale.h>
+#include <cstdlib>
+В корне функции добавить -
+    setlocale(LC_ALL, "Russian"); // задаём русский текст
+    system("chcp 1251"); // настраиваем кодировку консоли
+
+
+UTF-8 в Visual Studio
+https://stackoverflow.com/questions/41335199/how-to-config-visual-studio-to-use-utf-8-as-the-default-encoding-for-all-project
+https://programforyou.ru/poleznoe/russkii-yazik-v-visual-studio-chto-delat-esli-nichego-ne-pomogaet
+
+
