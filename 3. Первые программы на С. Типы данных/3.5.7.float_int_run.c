@@ -12,10 +12,14 @@ Sample Output: 1
 #include <stdio.h>
 
 int main() {
-    int n = 0, day = 0;
-    scanf("%d%d", &n, &day);
+    int n = 0;  // кругов
+    float k = 0.0;  // коэффициент
+    scanf("%d%f", &n, &k);
+    
+    float n2f = n * k;  // кругов пробежал второй - с дробной частью
+    int res = (int)(n - n2f);  // кол-во встреч
 
-    printf("%d", 0);
+    printf("%d", res);
     
     return 0;
 }
