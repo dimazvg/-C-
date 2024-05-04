@@ -7,7 +7,7 @@ int main() {
     printf("%%d or %%i x - ");
     printf("%d or %i\n\n", x, x);     // 13 or 13
 
-    unsigned int y = 013;
+    unsigned int y = 013;             // присвоили число 13, оно читается как восьмеричное
     printf("input integer number 13 like octal number in variable unsigned int y\n");
     //scanf("%o", &y);                // ввели число 13, оно читается как восьмеричное
     printf("unsigned int y = 013\n");
