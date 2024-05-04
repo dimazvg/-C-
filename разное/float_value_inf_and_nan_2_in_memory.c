@@ -32,22 +32,22 @@ int main() {
     printf("\n");
 
     f = 15.0 / 0.0;
-    printf("f = 15.0 / 0.0\nbits: ");
+    printf("f = 15.0 / 0.0 = %f\nbits: ", f);
     print_bits(n);
     printf("\n");
 
     f = -15.0 / 0.0;
-    printf("f = -15.0 / 0.0\nbits: ");
+    printf("f = -15.0 / 0.0 = %f\nbits: ", f);
     print_bits(n);
     printf("\n");
 
     f = 0.0 / 0.0;
-    printf("f = 0.0 / 0.0\nbits: ");
+    printf("f = 0.0 / 0.0 = %f\nbits: ", f);
     print_bits(n);
     printf("\n");
 
     f = -f;
-    printf("f = -f\nbits: ");
+    printf("f = -f = %f\nbits: ", f);
     print_bits(n);
     printf("\n");
 
