@@ -46,7 +46,8 @@
 * `git push origin develop` - загрузить (запушить) коммит в репозиторий в ветку **develop**
 
 ## GCC
-* `gcc -o hello hello.c`
+* `gcc -o hello hello.c`  
+* `gcc -Wall -Wextra -Werror -std=c11 -o hello hello.c` - подсветить проблемы и ошибки программы и компилировать по указанному стандарту
 * для запуска `./hello` или `./hello.exe`
 
 
