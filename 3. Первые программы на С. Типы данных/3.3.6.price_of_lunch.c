@@ -11,7 +11,9 @@ Sample Output:
 int main() {
     int k_rice = 0, k_veg = 0;  // стоимость порции риса и салата соответственно
     scanf("%d%d", &k_rice, &k_veg);
+
     int cost_lunch = k_rice + 2 * k_veg;
+    
     printf("%d", cost_lunch);
     
     return 0;
