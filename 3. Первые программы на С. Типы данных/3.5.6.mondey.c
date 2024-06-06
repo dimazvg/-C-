@@ -1,8 +1,10 @@
 /* monday Понедельники
 В месяце n дней. Первый понедельник наступил в день day.
 Сколько в этом месяце понедельников?
-Sample Input:  30 4
-Sample Output: 4
+Sample Input:  
+    30 4
+Sample Output: 
+    4
 */
 #include <stdio.h>
 

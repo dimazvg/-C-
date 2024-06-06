@@ -19,6 +19,7 @@ Sample Output: 3
 int main() {
     int bell = 0, nBell = 0;
     scanf("%d%d", &bell, &nBell);
+    
     int Sbell = 0, SnBell = 0;  // сумма первых bell и nBell членов арифметической прогрессии
     Sbell = (int)((1 + bell) / 2.0 * bell);
     SnBell = (int)((1 + nBell) / 2.0 * nBell);

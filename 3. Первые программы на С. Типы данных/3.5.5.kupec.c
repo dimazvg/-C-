@@ -5,14 +5,17 @@
 "Одинаковое количество монет по 2 монеты" - это 2 рубля + 2 пятака + 2 копейки.
 Дано: rub и kop через пробел.
 Напечатать: n и rest через пробел.
-Sample Input: 1 23
-Sample Output: 1 17
+Sample Input: 
+    1 23
+Sample Output: 
+    1 17
 */
 #include <stdio.h>
 
 int main() {
     int rub = 0, kop = 0;
     scanf("%d%d", &rub, &kop);
+    
     int summa = rub * 100 + kop;
     int n = summa / (100 + 5 + 1);
     int rest = summa % (100 + 5 + 1);
