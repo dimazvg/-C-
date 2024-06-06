@@ -9,7 +9,7 @@ Sample Output:
 #include <stdio.h>
 
 int main() {
-    int n = 0, day = 0;
+    int n = 0, day = 0;         // n дней в месяце, в день day - первый понедельник
     scanf("%d%d", &n, &day);
 
     int mondey_count = (n - day + 1 + 6) / 7;

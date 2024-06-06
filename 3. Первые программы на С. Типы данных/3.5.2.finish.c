@@ -12,8 +12,8 @@ Sample Output:
 #include <stdio.h>
 
 int main() {
-    int round = 0;  // длина круга дорожки
-    int total = 0;  // должны пробежать студенты
+    int round = 0;      // длина круга дорожки
+    int total = 0;      // должны пробежать студенты
     scanf("%d%d", &round, &total);
 
     int res1 = total / round;
