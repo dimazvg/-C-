@@ -13,7 +13,9 @@ Sample Output:
 int main() {
     int v = 0;  // speed - km per hour
     scanf("%d", &v);
+
     float v_res = v * 1000 / (float)3600;  // result speed - m per second
+    
     printf("%f", v_res);
     
     return 0;
