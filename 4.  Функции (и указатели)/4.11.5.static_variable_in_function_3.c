@@ -12,6 +12,5 @@ int main() {
     unsigned int olga_id = get_free_id();       // 2
     unsigned int gleb_id = get_free_id();       // 3
 
-
     return 0;
 }
