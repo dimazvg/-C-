@@ -3,6 +3,11 @@
 Написать функцию 
     void print_revers(int x);
 Она печатает 6 цифр числа x в обратном порядке.
+Посылать только реализацию функции.
+Sample Input:
+    123456
+Sample Output:
+    654321
 */
 #include <stdio.h>
 
