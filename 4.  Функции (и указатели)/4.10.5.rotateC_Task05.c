@@ -3,6 +3,14 @@
 Написать и использовать функцию
     void rotateC(int *x1, int *y1, int *x2, int *y2);
 которая поворачивает прямоугольник на 90 градусов вокруг его центра (пересечения диагоналей).
+Гарантируется, что тесты будут оставлять прямоугольник после поворота в целых координатах. Ничего округлять не нужно.
+Input format: 4 целых числа через пробел - xlt ylt xrb yrb - координаты вершин прямоугольника до поворота.
+Output format: 4 целых числа через пробел - xlt ylt xrb yrb - координаты левой верхней и правой нижней вершины прямоугольника 
+    после поворота.
+Sample Input:
+    0 6 10 4
+Sample Output:
+    4 10 6 0
 */
 #include <stdio.h>
 
@@ -13,7 +21,9 @@ void dxdy(int x1, int y1, int x2, int y2, int *dx, int *dy);
 int main() {
     int xlt, ylt, xrb, yrb;
     scanf("%d%d%d%d", &xlt, &ylt, &xrb, &yrb);
+
     rotateC(&xlt, &ylt, &xrb, &yrb);
+
     printf("%d %d %d %d", xlt, ylt, xrb, yrb);
 
     return 0;
