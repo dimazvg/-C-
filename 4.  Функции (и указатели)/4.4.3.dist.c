@@ -9,9 +9,11 @@
 */
 #include <stdio.h>
 #include <math.h>
+
 float dist(int x1, int y1, int x2, int y2);
 
-int main() {
+int main() 
+{
    int x1, y1, x2, y2;            // координаты точек
    float len;                     // длина
 
@@ -25,6 +27,7 @@ int main() {
    return 0;
 }
 
-float dist(int x1, int y1, int x2, int y2) {
+float dist(int x1, int y1, int x2, int y2) 
+{
     return sqrtf(powf(x2 - x1, 2) + powf(y2 - y1, 2));
 }

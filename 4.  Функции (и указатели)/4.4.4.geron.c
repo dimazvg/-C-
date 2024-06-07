@@ -16,19 +16,19 @@ float dist(int x1, int y1, int x2, int y2);
 float area(int x1, int y1, int x2, int y2, int x3, int y3);
 
 int main() {
-    int x1, y1, x2, y2, x3, y3;    // координаты точек
-    float S;                       // площадь треугольника
+    int x1, y1, x2, y2, x3, y3;         // координаты точек
+    float S;                            // площадь треугольника
 
     // читаем числа
     scanf("%d%d", &x1, &y1);
     scanf("%d%d", &x2, &y2);
     scanf("%d%d", &x3, &y3);
     
-    S = area(x1, y1, x2, y2, x3, y3);    // вызываем площадь
+    S = area(x1, y1, x2, y2, x3, y3);    // вызываем функцию подсчёта площади
 
-    printf("%.3f\n", S);         // напечатать площадь
+    printf("%.3f\n", S);                 // печатаем площадь
 
-   return 0;
+    return 0;
 }
 
 float dist(int x1, int y1, int x2, int y2) {
@@ -36,7 +36,7 @@ float dist(int x1, int y1, int x2, int y2) {
 }
 
 float area(int x1, int y1, int x2, int y2, int x3, int y3) {
-    float a, b, c;  // стороны треугольника
+    float a, b, c;                      // стороны треугольника
     a = dist(x1, y1, x2, y2);
     b = dist(x1, y1, x3, y3);
     c = dist(x2, y2, x3, y3);
