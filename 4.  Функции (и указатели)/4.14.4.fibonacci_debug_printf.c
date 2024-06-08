@@ -1,7 +1,11 @@
+/* подсчёт n-го числа последовательности Фибрначчи с отладочной печатью для наглядности
+    (подсчёт членов ведём от нулевого) 
+также добавлен подсчёт количества вызовов и печать номера вызова
+*/
 #include <stdio.h>
 
-int fib (int n, int depth) {
-    static int cnt;
+int fib(int n, int depth) {
+    static int cnt;  // количество вызовов функции
     cnt++;
     printf("%-*c call fib(%d)", depth, '>', n);
     printf(", call #%d\n", cnt);
