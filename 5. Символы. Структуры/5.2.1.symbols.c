@@ -7,7 +7,7 @@ int main() {
     printf("\n");
 
     int x;          // да, именно int
-    getchar();      // для чтения enter рпи прошлом вводе
+    getchar();      // для чтения enter при прошлом вводе
     x = getchar();  // нажмем на клавиатуре клавишу Q и далее Enter
     putchar(x);     // Q
 
