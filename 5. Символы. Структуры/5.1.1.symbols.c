@@ -9,7 +9,7 @@ int main() {
 
     char c = '7';
     int digit = '7' - '0';
-    printf("char \'7\' to digit: %d\n", digit);
+    printf("char \'%c\' to digit: %d\n", c, digit);
 
     c1 = 'w';
     c2 = c1 - 'a' + 'A';

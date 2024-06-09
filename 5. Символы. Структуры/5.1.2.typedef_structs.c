@@ -28,9 +28,12 @@ void inc_y(tPoint * p);
 float distance(tPoint * p1, tPoint * p2);
 
 int main() {
+    printf("Todey is %d!\n\n", YEAR);
+    // ---------------------
     struct Student Petya = {100, 2005, 90.1f, 174.5f, 14, 22, 10};
     printf("student Petya: ");
     print_student(Petya);
+    printf("\n");
     // ---------------------
     tPoint P1 = {0, 0}, P2 = {0, 0};
     move_point(&P1, 4, 5);
