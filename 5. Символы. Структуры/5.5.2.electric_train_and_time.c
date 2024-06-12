@@ -13,11 +13,11 @@ struct Time {
     int m;      // минуты
 };
 
-void print_time(struct Time t);
-int time2min(struct Time t);    // Time -> min
-struct Time min2time(int mm);   // mm -> h, m
-int is_equal(struct Time t1, struct Time t2);  // сравнение структур Time
-struct Time add(struct Time t1, struct Time t2);  // сложение структур Time
+void print_time(struct Time t); // печать времени по определённому формату
+int time2min(struct Time t);    // переводим время в минуты: Time -> min
+struct Time min2time(int mm);   // переводим минуты в показания на часах: mm -> Time (h, m)
+int is_equal(struct Time t1, struct Time t2);       // сравнение структур Time
+struct Time add(struct Time t1, struct Time t2);    // сложение структур Time
 
 int main() {
     struct Time t1 = {22, 55};
