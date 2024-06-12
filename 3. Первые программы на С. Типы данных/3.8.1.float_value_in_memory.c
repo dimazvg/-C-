@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+#include <math.h>  // для компиляции в Ubuntu нужно использовать флаг -lm в конце
 
 void print_bits_32(unsigned int* n);  // печатаем биты числа длиной но 32 бит
 void print_bits_64(unsigned long long int* n);  // печатаем биты числа длиной но 64 бит

@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <math.h>
-/* для компиляции в Ubuntu нужно использовать флаг -lm в конце*/
+#include <math.h>  // для компиляции в Ubuntu нужно использовать флаг -lm в конце
+
 int main() {
     float x;
     printf("float x;\n");
