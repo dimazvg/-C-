@@ -2,22 +2,26 @@
 Один из форматов RGB: все цвета получаются смешением красного (red), зеленого (green) и синего (blue) различной интенсивности. 
 Интенсивность можно описать структурой Color (ниже в программе).
 Требуется написать функции:
-// считать RGB-формат с консоли
-    Color getColor();
-// перевод из RGB-формата в число
-    unsigned long long convertToHTML(Color);
-// преобразование числа цвета в RGB-формат
-    Color convertToRGB(unsigned long long);
-// печать цвета в RGB-формате (печать значений в десятичном виде через пробел)
-// red green blue:
-// 255 128 222
-// Печатать только числа через пробел и \n в конце!!!
-    void printRGB(Color);
-// печать цвета в HTML-формате и \n в конце.
-// Примеры: FFA902 0AA3FF
-    void printHTML(Color);
+Color getColor();                           // считать RGB-формат с консоли
+unsigned long long convertToHTML(Color);    // перевод из RGB-формата в число
+Color convertToRGB(unsigned long long);     // преобразование числа цвета в RGB-формат
+void printRGB(Color);                       // Печать цвета в RGB-формате: 255 128 222 - только числа через пробел и \n в конце
+void printHTML(Color);                      // печать цвета в HTML-формате и \n в конце. Примеры: FFA902 0AA3FF
+- - - - - - - - - - - - - - - 
+Печать цвета в RGB-формате (печать значений в десятичном виде через пробел: red green blue):
+    255 128 222
+Печать цвета в HTML-формате и \n в конце. 
+    FFA902 
+    0AA3FF
 В Си спецификаторы %x и %X - для вывода числа в шестнадцатеричном формате, %d, %u - в десятичном.
 Функция main дана (ниже в программе).
+Sample Input:
+    255 128 16
+Sample Output:
+    255 128 16
+    16744464
+    FF8010
+    255 128 16
 */
 #include <stdio.h>
 
@@ -27,11 +31,11 @@ typedef struct {
     unsigned char blue;
 } Color;
 
-Color getColor();  // считать RGB-формат из терминаоа
-unsigned long long convertToHTML(Color);  // перевод из RGB-формата в число
-Color convertToRGB(unsigned long long);  // преобразование числа цвета в RGB-формат
-void printRGB(Color);  // печать цвета в RGB-формате
-void printHTML(Color);  // печать цвета в HTML-формате и \n в конце.
+Color getColor();                           // считать RGB-формат из терминаоа
+unsigned long long convertToHTML(Color);    // перевод из RGB-формата в число
+Color convertToRGB(unsigned long long);     // преобразование числа цвета в RGB-формат
+void printRGB(Color);                       // печать цвета в RGB-формате
+void printHTML(Color);                      // печать цвета в HTML-формате и \n в конце.
 
 int main() {
     Color z, z2;
