@@ -1,3 +1,4 @@
+/* пример на значение NaN и INF в типе float */
 #include <stdio.h>
 
 int main() {
