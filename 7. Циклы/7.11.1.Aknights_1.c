@@ -1,4 +1,4 @@
-/* Aknights Рыцари и лжецы   - с отлаочной печатью
+/* Aknights Рыцари и лжецы 1 - подробное решение с коментариями и проверкой на верность предполажений
 На острове Буяне жили N человек, каждый из которых был либо рыцарем либо лжецом, встали в круг.
 Рыцари говорят только правду, лжецы всегда только лгут. Каждому человеку в кругу задали вопрос: 
     «Кто ты и кто твой сосед слева: рыцарь или лжец?» 
@@ -66,30 +66,21 @@ int main()
                 count2++;
             }
         }
-        printf("\tman1 = %d, count1 = %d\n", man1, count1);
-        printf("\tman2 = %d, count2 = %d\n", man2, count2);
-        printf("\t----------------------------\n");
     }
-        printf("count 1 = %d\n", count1);
-        printf("count 2 = %d\n", count2);
 
     if (man1) v1 = 1;
     if (!man2) v2 = 1;
-        printf("v1 %d, v2 %d\n", v1, v2);
 
-    if (v1 && v2) {
-            printf("v1 && v2\n");
+    if (v1 && v2) 
         if (count1 <= count2)
             printf("%d", count1);
         else
             printf("%d", count2);
-    } else if (v1) {
-            printf("v1\n");
+    else if (v1)
         printf("%d", count1);
-    } else if (v2) {
-            printf("v1\n");
+    else if (v2) 
         printf("%d", count2);
-    } else
+    else
         printf("%d", 0);
 
     return 0;
